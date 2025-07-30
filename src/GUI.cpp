@@ -768,7 +768,7 @@ static void Display_WindowOptions(HealTableOptions& pHealingOptions, HealWindowC
 				for(int i = 0; i < size + 1; i++)
 				{
 					// This will trigger an array out of bounds read in ASan
-					printf("Triggered an array out of bounds read at address %p, value %u", static_cast<void*>(stack_array + i), stack_array[i]);
+					LogW("Triggered an array out of bounds read at address {}, value {}", fmt::ptr(static_cast<void*>(stack_array + i)), stack_array[i]);
 				}
 			}
 

@@ -760,6 +760,18 @@ static void Display_WindowOptions(HealTableOptions& pHealingOptions, HealWindowC
 			}
 			ImGuiEx::SmallCheckBox("anonymous mode", &pContext.AnonymousMode);
 
+			if (ImGuiEx::SmallCheckBox("trigger ASan", &pContext.TriggerASan) == true && pContext.TriggerASan == true)
+			{
+				uint8_t stack_array[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+				int size = 10;
+
+				for(int i = 0; i < size + 1; i++)
+				{
+					// This will trigger an array out of bounds read in ASan
+					printf("Triggered an array out of bounds read at address %p, value %u", static_cast<void*>(stack_array + i), stack_array[i]);
+				}
+			}
+
 			ImGui::SetNextItemWidth(260.0f);
 			ImGuiEx::SmallInputText("short name", pContext.Name, sizeof(pContext.Name));
 			ImGuiEx::AddTooltipToLastItem("The name used to represent this window in the \"heal stats\" menu");

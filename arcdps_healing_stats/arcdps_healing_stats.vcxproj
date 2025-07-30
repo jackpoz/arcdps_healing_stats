@@ -94,7 +94,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <PrecompiledHeaderFile />
-      <AdditionalIncludeDirectories>..\modules\arcdps_extension;..\src;..\arcdps_mock\imgui;$(SolutionDir)$(Platform)\autogen</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\modules\arcdps_extension;..\src;$(SolutionDir)$(Platform)\autogen</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
@@ -116,7 +116,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\modules\arcdps_extension;..\src;..\arcdps_mock\imgui;$(SolutionDir)$(Platform)\autogen</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\modules\arcdps_extension;..\src;$(SolutionDir)$(Platform)\autogen</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
@@ -141,7 +141,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp23</LanguageStandard>
       <PrecompiledHeaderFile />
-      <AdditionalIncludeDirectories>..\modules\arcdps_extension;..\arcdps_mock\imgui;..\src;$(SolutionDir)$(Platform)\autogen</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\modules\arcdps_extension;..\src;$(SolutionDir)$(Platform)\autogen</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>

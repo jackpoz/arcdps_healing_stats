@@ -38,8 +38,16 @@
       "version": "1.15#1"
     },
     {
+      "name": "fmt",
+      "version": "12.0.0"
+    },
+    {
       "name": "imgui",
       "version": "1.92.7"
+    },
+    {
+      "name": "spdlog",
+      "version": "1.16.0"
     }
   ]
 }

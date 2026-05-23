@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
   "name": "arcdps-personal-stats",
   "version-string": "2.2rc2",
   "dependencies": [
@@ -11,7 +11,6 @@
     "prometheus-cpp",
     "spdlog",
     "imgui",
-    "arcdps-mock",
     {
       "name": "arcdps-extension",
       "default-features": false,
@@ -21,6 +20,10 @@
     }
   ],
   "overrides": [
+    {
+      "name": "abseil",
+      "version": "20250814.1"
+    },
     {
       "name": "c-ares",
       "version": "1.18.1"
@@ -36,6 +39,10 @@
     {
       "name": "civetweb",
       "version": "1.15#1"
+    },
+    {
+      "name": "grpc",
+      "version": "1.76.0#0"
     },
     {
       "name": "imgui",
